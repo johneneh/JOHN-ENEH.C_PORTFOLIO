@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--font awesom cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!--font family roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--font family monteserat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body id="Home">
+
+    <header>
+        <nav class="all">
+            <div class="logo">
+                <img src="./images/my logo.jpg" alt="my logo">
+            </div>
+
+            <ul class="desktop-nav">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Project">Project</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+
+
+            <!--mobile hamburger-->
+            <div class="mobile">
+                <button><i class="fa-solid fa-bars"></i></button>
+
+                <ul class="mobile-dropdown">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Project">Project</a></li>
+                    <li><a href="#Contact">Contact</a></li> 
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!--the hero section-->
+        <section class="hero">
+            <div class="hero-container">
+            <div class="hero-pic">
+
+                <img src="./images/profile3.jpg" alt="my proffesional photo">
+
+            </div>
+
+            <h1 class="hero-text"> John Chichebe Eneh</h1>
+            <p>Aspiring Full Stack Developer specializing in <strong>MERN Stack</strong>(MongoDb,Express,React,Node.js) to build high performance web applications</p>
+            <a href="resume">view Resume</a>
+            </div>
+        </section>
+        
+         <!--the About section-->
+        <section id="About" class="about-parent">
+            <h2>About Me</h2>
+            <div class="About">
+                <div class="about-text">
+                    <ul>
+                        <li>My name is John Eneh, and I hold a degree in Materials and Metallurgical Engineering from the Federal University of Technology, Owerri.</li>
+
+                        <li>I am motivated by a fervent desire to excel in all my endeavors, as well as by a spirit of exploration. My interests encompass reading and conducting research</li>
+                        
+                        <li>I embarked on a career in technology due to my fervent passion for creation and research. The field of technology provides the necessary skills and tools to excel in these endeavors.</li>
+                    </ul>
+
+                </div>
+
+                <div class="about-pic">
+                    <img src="./images/profile2.jpg" alt="my profile image">
+                </div>
+            </div>
+        </section>
+
+        <!-- this isskills section-->
+        <section id="Skills">
+            <h2 class="skills-h">MY SKILLS</h2>
+            <div class="skills-display">
+                <div class="card">
+                    <button>
+                        <i class="fa-brands fa-html5"></i>
+                    </button>
+                    <p>html</p>
+                </div>
+
+                <div  class="card">
+                    <button>
+                        <i class="fa-brands fa-css"></i>
+                    </button>
+                    <p>css</p>
+                </div>
+
+                <div  class="card">
+                    <button>
+                        <i class="fa-brands fa-git"></i>
+                    </button>
+                    <p>git</p>
+                </div>
+
+                <div  class="card">
+                    <button>
+                        <i class="fa-brands fa-github"></i>
+                    </button>
+                    <p>git-hub</p>
+                </div>
+            </div>
+        </section>
+
+        <!--projects section-->
+        <section id="Project">
+            <h2 class="project-head">MY PROJECTS</h2>
+            <div  class="project-show">
+                <div class="project-box">
+                    <h3>clinic management system website(upcoming)</h3>
+                    <p>a comprehensive health care platform featuring digital patient registeration and autiimated appointment scheduling</p>
+                </div>
+                <div class="project-box">
+                    <h3>exclusive student sicial hub(upcoming)</h3>
+                    <p> asocial platform restricted to university domain featuring student-led study group, campus wide event feeds</p>
+                </div>
+                <div class="project-box">
+                    <h3>specialized labor connection app(upcoming)</h3>
+                    <p>a proffesional networking app connecting skilled labourers and local contractors and clients</p>
+                </div>
+                <div class="project-box">
+                    <h3>travel agency hub(upcoming)</h3>
+                    <p>a dynamic booking engine for dynamic travel package including integrated search filters for destination</p>
+                </div>
+            </div>
+        </section>
+
+        <!--contact section-->
+        <section id="Contact" class="form-parent">
+            <h2>GET IN TOUCH</h2>
+            <div>
+                <p class="form-text">got a project in mind or a technical challange that needs solving? I'd love to hear about it let's connect and build something impactful</p>
+            </div>
+
+            <div  class="form-container">    
+                <form>
+                    
+                    <div class="form-content">
+                        <label for="name">full name</label>
+                        <input type="text" id="name" placeholder="your name">
+                    </div>
+
+                    <div  class="form-content">
+                        <label for="email">email</label>
+                        <input type="email" id="email" placeholder="your email">
+                    </div>
+
+                    <div  class="form-content">
+                        <label for="message">message</label>
+                        <textarea id="message"></textarea>
+                    </div>
+
+                    <button class="btn">submit</button>
+                </form> 
+
+                <div class="social">
+                    <p>follow us</p>
+                    <div class="social">
+                       <div>
+                         <a href="#">linkedin</a>
+                         <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                       <div>
+                         <a href="#">twitter</a>
+                         <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div>
+                            <a href="#">github</a>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div>
+                            <a href="#">instagram</a>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                          
+                    </div>
+                </div> 
+            
+            </div> 
+        </section>
+
+
+    </main>
+
+    <!--this is footer-->
+    <footer>
+        <div class="footer-box">
+            <p>&copy John Eneh 2026</p>
+            <Div>
+               <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </Div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,441 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html{scroll-behavior: smooth;}
+
+main p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.about-text ul li{
+   font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+} 
+
+body{
+    background-color: aliceblue;
+    background-image: linear-gradient(black,#ffff,gray);
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 4.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-image: url(./images/Grace\ .jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+   
+    
+}
+.all a{
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+}
+header nav{
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+.logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    display: block;
+    max-height: 80%;
+    width: auto;
+    border-radius: 10px;
+}
+.desktop-nav {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    display: none;
+}
+
+
+.mobile-dropdown li{
+    list-style-type: none;
+}
+.mobile-dropdown a{
+    text-decoration: none;
+    color: black;
+}
+.mobile-dropdown {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: whitesmoke;
+    height: calc(100vh - 5rem);
+    width: 40%;
+    max-width: 10rem;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    display: none;
+}
+.mobile-dropdown li a:hover{
+    background-color: blue;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem; 
+    font-weight: 800;
+}
+.mobile button{font-size: 1.3rem;}
+
+/*this is hero section*/
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    min-height: 60%vh;
+    width: 100%;
+    margin: 2rem auto;
+
+}
+.hero-text{
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-align: center;
+    background-image: url("./images/Grace\ .jpg");
+    background-size: 100%;
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0.219);
+
+}
+
+.hero-pic img{
+    width: 500px;
+    height: 400px;
+    max-width: 280px;
+    border-radius: 150px;
+    box-shadow: 20px 10px 50px;
+}
+.hero-container a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: wheat;
+    background-color: black;
+    padding: 12px;
+    border-radius: 50px;
+}
+.hero-container a:hover{
+    background-color:gold;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem; 
+    font-weight: 800; 
+}
+.hero-container p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+/* this is about section*/
+
+.about-parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+.about-pic img{
+    width: 200px;
+    height: 200px;
+    border-radius: 1000px;
+    box-shadow: 20px 10px 50px;
+
+}
+.about-text li{
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/*this is skills section*/
+.skills-h{
+    margin-top: 35px;
+    text-align: center;
+
+}
+.skills-display{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding: 4px;
+    text-align: center;
+    margin: 2rem 4rem;
+
+
+}
+.card{
+    border: 1px solid ;
+    background-color: rgba(218, 165, 32, 0.548);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+
+
+}
+.card i{
+    font-size: 4rem;
+}
+.card:hover{
+    transform:translateY(10px);
+    border-color: blue;
+}
+/*this is for project*/
+.project-head{
+    margin-top: 35px;
+    text-align: center;
+}
+.project-show{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 4px;
+    text-align: center;
+    margin: 2rem 4rem;
+
+}
+.project-box{
+    border: 1px solid ;
+    background-color: rgba(218, 165, 32, 0.61);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+
+
+}
+.project-box:hover{
+    transform:translateY(10px);
+    border-color: blue;
+    transform: scale(1.1);
+}
+/* this is for contact section*/
+.form-parent h2{
+     margin-top: 35px;
+    text-align: center;
+
+}
+form{
+    margin-left: 5px;
+}
+.form-text{
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 1.6;   
+}
+.form-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    text-align: center;
+}
+.form-content{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+input,textarea{
+    padding: 10px;
+    border: 1.5px solid black;
+    border-radius: 7px;
+}
+input:focus, textarea:focus{
+    outline: none;
+    border-color: blue;
+
+}
+.btn{
+    padding: 10px;
+    background-color: gold;
+    border-radius: 5px;
+    margin-top: 4px;
+}
+.btn:hover{
+    background-color:black;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem; 
+    font-weight: 800;
+}
+.social{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+}
+.social a{
+    color: white;
+    font-size: 1rem; 
+    font-weight: 800; 
+    text-decoration: none;
+    margin-right: 15px;
+}
+.social a:hover{
+   background-color:gold;
+    color:blue;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem; 
+    font-weight: 800; 
+}
+.footer-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:  1rem;
+}
+
+@media (min-width:768px){
+.mobile{display: none;
+    }
+
+    .desktop-nav {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    }
+    .desktop-nav a{
+    color:black;
+    text-decoration: none;
+    }
+    .desktop-nav a:hover{
+    background-color:gold;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem; 
+    font-weight: 800;  
+    }
+    .About{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    }
+    .about-text li{
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 1.6;
+    }
+    .skills-display{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding: 4px;
+    text-align: center;
+    }
+}
+
+@media (min-width:1024px) {
+    .mobile{display: none;
+    }
+
+    .desktop-nav {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    }
+    .desktop-nav a{
+    color:black;
+    text-decoration: none;
+    }
+    .desktop-nav a:hover{
+    background-color:gold;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem; 
+    font-weight: 800;  
+    }
+    .About{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    }
+    .about-text li{
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 1.6;
+    }
+    .skills-display{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 4px;
+    text-align: center;
+    } 
+    .card i{
+    font-size: 4rem;
+    }
+    .card:hover{
+    transform:translateY(10px);
+    border-color: blue;
+    }
+    .project-show{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding: 4px;
+    text-align: center;
+    }
+    form{
+    margin-left: 4rem;
+    }
+    textarea{
+    height: 150px;
+    }
+    .project-box{
+    height:120px ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items:center;
+    }
+    .project-show{
+    gap: 30px;
+    }
+    
+}
